@@ -1,0 +1,106 @@
+.small-img {
+    height: 5rem;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-nav-logo-left {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: sticky;
+    top: 0;
+    background-color: $primary;
+    z-index: 1000;
+
+    .logo {
+        grid-column: 1 / 2;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        h3 {
+            align-self: center;
+            color: $secondary;
+            font-size: 1.7rem;
+            letter-spacing: 1.2;
+            font-weight: bolder;
+            grid-column: 2 / 3;
+        }
+
+        &-img {
+            justify-self: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            height: 9rem;
+            width: auto;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .nav {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+
+        // align-items: center;
+        // justify-items: center;
+        // padding-right: 2rem;
+        // margin-left: 5rem;
+
+        font-weight: bolder;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            font-size: 1.7rem;
+            color: $secondary; //$text-color-nav;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $secondary-6;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+.main-nav {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 7rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+
+    &-item {
+        list-style: none;
+
+        &-link {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: $secondary;
+
+            &:hover {
+                color: $secondary-2;
+            }
+        }
+    }
+}
+
+.small-nav {
+    background-color: $primary-2;
+    transition: all 0.3s ease-in-out;
+}

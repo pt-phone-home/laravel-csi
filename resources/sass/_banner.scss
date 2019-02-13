@@ -1,0 +1,46 @@
+.banner {
+    grid-column: 1 / -1;
+    // grid-row: 2 / 3;
+    height: 50rem;
+    // margin-top: -7rem;
+
+    background: linear-gradient(
+            to right bottom,
+            rgba($primary-1, 0.6),
+            rgba($primary-6, 0.4)
+        ),
+        url("/images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+
+    h1 {
+        color: $grey1;
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        // background: $primary;
+        padding: 2rem;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: -30rem;
+
+        .letter {
+            display: inline-block;
+        }
+    }
+    p {
+        justify-self: center;
+        align-self: center;
+        color: $secondary-2;
+        font-size: 2rem;
+
+        background: $primary-3;
+        padding: 2rem;
+    }
+    .banner-button {
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+}
